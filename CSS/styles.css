@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700;800;900&display=swap');
+body{
+    margin: 0;
+    font-family: 'Noto Sans Arabic', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.active_btn{
+    color: rgb(0, 128, 58) !important;
+}
+
+*:active {
+    -webkit-tap-highlight-color: transparent; /* For Safari, iOS, and Android < 4.4 */
+    tap-highlight-color: transparent; /* For newer Android versions */
+}
+/* Start Section 1 */
+.section1 .title{/*the title contains text and logo*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section1 .title .title_text{
+    font-size: 2.5em;
+    margin-left: 25px;
+}
+.section1 .title .title_logo img{
+    width: 70px;
+}
+
+
+
+.section1 .section1_content{
+    margin: 25px 0 55px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.language_place{
+    margin-left: 20px;
+    display: flex;
+}
+.settings{
+    margin-right: 70px;
+}
+.settings_block{
+    display: none;
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    border-radius: 20px;
+    box-shadow: 0 0 10px black;
+    background-color: rgb(255, 255, 255);
+}
+.language{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+}
+.language_logo{
+    margin-right: 20px;
+}
+.settings span,.use_current_location span{
+    cursor: pointer;
+    position: relative;
+}
+
+.material-symbols-outlined{
+    font-size: 40px !important;
+    font-weight: 700 !important;
+}
+#settings_under_block,#use_current_location_hover_block{
+    display: block;
+    position: absolute;
+    font-size: 0.9em;
+    word-spacing: 0.1px;
+}
+#settings_under_block{
+    left: 10px;
+}
+#use_current_location_hover_block{
+    left: 100px;
+}
+.current_place{
+    /* max-width: 150px; */
+    overflow: hidden;
+    text-align: end;
+
+    line-height: 70px;
+    margin-right: 20px;
+    font-size: 4em;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.not_finished_settings_block{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+    background-color: rgb(255, 43, 43);
+    width: fit-content;
+    position: relative;
+
+}
+.not_finished_settings_block_content{
+    font-weight: 600;
+    color: #ffffff;
+}
+/* .not_finished_settings_block_content::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    background-color: #ccc;
+    right: 60px;
+    top: 0;
+} */
+.close span{
+    color: white !important;
+    position: relative;
+    top: 5px;
+}
+@media (max-width : 667px){
+.settings_block{
+    width: 300px;
+}
+.not_finished_settings_block{
+    width: 80%;
+}
+.language_logo{
+    position: relative;
+    top: 12px;
+}
+.section1 .section1_content{
+    margin: 25px 0 55px 0;}
+.current_place{
+    max-width: 150px;
+    font-size: 1.6em;
+    line-height: 30px;
+
+}
+}
+
+
+/* start section 2  */
+.section2{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.change_location {
+    margin: 20px; 
+}
+select {
+    font-family: 'Noto Sans Arabic', sans-serif;
+
+    padding: 10px; /* Adjust the padding as per your preference */
+    font-size: 1em; /* Adjust the font size as per your preference */
+    border: 1px solid #ccc; /* Add a border to the select element */
+    border-radius: 4px; /* Round the corners of the select element */
+    width: 200px; /* Adjust the width as per your preference */
+    font-weight: 700;
+
+}
+ option {
+    font-size: 16px; /* Adjust the font size of the options */
+    padding: 8px; /* Adjust the padding of the options */
+    font-weight: 700;
+
+}
+
+.prayer_times{
+    border: 2px solid black;
+    font-size: 1.5em;
+    font-weight: 700;
+    
+}
+.item {
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.item_name{
+    order: 2;
+}
+
+@media (max-width : 750px){
+.item {
+    width: 250px;
+}
+}
+@media (max-width : 667px){
+.section2{
+    margin-top: 35px;}
+.item {
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+}
+@media (max-width : 500px){
+    .section2   {
+    flex-direction: column;
+ }
+select {
+    font-family: 'Noto Sans Arabic', sans-serif;
+    padding: 5px; /* Adjust the padding as per your preference */
+    font-size: 0.7em; /* Adjust the font size as per your preference */
+    border: 1px solid #ccc; /* Add a border to the select element */
+    border-radius: 4px; /* Round the corners of the select element */
+    width: 120px; /* Adjust the width as per your preference */
+    font-weight: 700;
+
+}
+ option {
+    font-size: 1em; /* Adjust the font size of the options */
+    padding: 5px; /* Adjust the padding of the options */
+    font-weight: 700;
+
+}
+.prayer_times{
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-top: 20px;
+    
+}
+.change_location {
+    margin: 0; 
+}
+}
+
+
+@media (max-width : 380px){
+ 
+ .section1 .title .title_text {
+    font-size: 1.5em;
+}
+}
+@media (max-width : 330px){
+    .language_place {
+        margin-left: 0px;}
+    #settings_under_block {
+        left: 3px;}
+    
+    
+    #use_current_location_hover_block {
+        left: 80px;
+    }
+}
+
+
+
+/* start section 3 */
+.section_next_pray{
+    width: 350px;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    color: red;
+    margin: auto;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.3em;
+}
+.section_next_pray_content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    
+}
+.next_pray{
+    margin-left: 15px;
+}
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Style for the two points animation */
+.time .two_points_animation {
+  animation: blink 0.5s infinite;
+}
+
+
+#masjid_logo{
+    color: #070707 !important;
+    font-size: 3em !important;
+}
+
+
+
+/* strat section 4 */
+
+.section_red{
+    display: flex;
+    text-align: end;
+    width: fit-content;
+    margin-top: 100px;
+    margin: auto;
+
+}
+@media (max-width : 667px){
+.section_red_content{
+    margin-right: 20px;
+}
+}

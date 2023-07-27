@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images/logo.png">
+    <title>مواقيت الصلاة</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/loading.css">
+    <link rel="stylesheet" href="CSS/dark_mode.scss">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="section1">
+        <div class="title">
+            <div class="title_logo">
+                <img src="Images/logo.png" alt="">
+            </div>
+            <div id="title_text" class="title_text">مواقيت الصلاة</div>
+        </div>
+        <div class="section1_content">
+
+            
+            <div class="language_place">
+                <div class="settings">
+                    <!-- <img src="Images/language.svg" alt=""> -->
+                    <span class="material-symbols-outlined" id="settings_logo">
+                        settings
+                    </span>
+                    <div id="settings_under_block" >
+                       الاعدادات
+                    </div>
+                    <div class="settings_block">
+                        <!-- <div class="close">
+                            <span class="material-symbols-outlined" id="close_button">close</span>
+                        </div> -->
+                        <div class="language">
+                            <span class="material-symbols-outlined language_logo">
+                                language
+                            </span>
+                            <div class="label_for_language_icon">غير اللغة الى الانجليزية </div>
+                        </div>
+                        <div class="not_finished_settings_block">
+                            <div class="not_finished_settings_block_content">Sorry i'm still working on this part !</div>
+                            <div class="close">
+                                <span class="material-symbols-outlined close">
+                                    close
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="use_current_location">
+                    <!-- <img src="Images/location.svg" alt=""> -->
+                    <span class="material-symbols-outlined" id="use_current_location_logo">
+                    pin_drop
+                    </span>
+                    <div id="use_current_location_hover_block" style="text-align: center;">
+                        استعمل موقعك<br> الحالي
+                    </div>
+                </div>
+            </div>
+            
+            <div class="current_place">الجزائر العاصمة </div>    
+        </div>
+        <hr>
+    </div>
+    <div class="section2_loading">
+        <div class="lds-ring">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div class="section2" style="display: none;">
+        <div class="change_location">
+            <select id="places">
+                <option value="asima">الجزائر العاصمة </option>
+                <option value="maka">مكة المكرمة</option>
+                <option value="el-madina">المدينة المنورة</option>
+                <option value="cairo">القاهرة</option>
+            </select>
+    </div>
+        <div class="prayer_times">
+            <div class="item">
+                <div class="item_name">الفجر </div>
+                <!-- <div class="item_break">:</div> -->
+                <div id="item_time_fajr"></div>
+            </div>
+
+            <div class="item">
+                <div class="item_name">الشروق </div>
+                <!-- <div class="item_break">:</div> -->
+                <div id="item_time_shorok"></div>
+            </div>
+
+            <div class="item">
+                <div class="item_name">الظهر</div>
+                <!-- <div class="item_break">:</div> -->
+                <div id="item_time_dohr"></div>
+            </div>
+
+            <div class="item">
+                <div class="item_name">العصر</div>
+                <!-- <div class="item_break">:</div> -->
+                <div id="item_time_asr"></div>
+            </div>
+
+            <div class="item">
+                <div class="item_name">المغرب </div>
+                <!-- <div class="item_break">:</div> -->
+                <div id="item_time_maghrib"></div>
+            </div>
+
+            <div class="item">
+                <div class="item_name">العشاء </div>
+                <!-- <div class="item_break">:</div> -->
+                <div id="item_time_isha"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="section_next_pray" style="display: none;">
+        <div class="title">الصلاة القادمة </div>
+        <div class="section_next_pray_content">
+            <span class="material-symbols-outlined" id="masjid_logo">
+                mosque
+            </span>
+            <div class="next_pray">
+                <span class="time">
+                    <span class="hour">00</span>
+                    <span class="two_points_animation">:</span>
+                    <span class="minuts">00</span>
+                    <span class="two_points_animation">:</span>
+                    <span class="seconds">00</span>
+                </span>
+                <span id="next_pray_name">العصر</span>
+                 
+            </div>
+            <!-- <div class="time">10:00</div> -->
+        </div>
+    </div>
+    <hr>
+    <div class="section_red">
+        
+        
+        <div class="section_red_content">ربما لا تكون اوقات الصلات دقيقة جدا باستعمال موقعك الحالي<br>
+             للمزيد من المعلومات يرجى زيارة الموقع <br>
+            <a href="https://aladhan.com/prayer-times-api">https://aladhan.com/prayer-times-api</a> 
+            </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
