@@ -6,7 +6,7 @@ https://aladhan.com/prayer-times-api
 
 also you can take a look at the website at this link :
 https://praytime.netlify.app/
-
+i used Html css js to build the project
 the laptop screen : 
 ![laptop screen](https://github.com/imadbenmadi/prayer_times/assets/106430872/8c496b42-6f95-41f6-b5ab-4bedd0ce0f80)
 
